@@ -1,0 +1,6 @@
+configuration {
+show-icons: true;
+icon-theme: "Hybrid";
+font: "Iosevka 10";
+theme: "materia";
+}

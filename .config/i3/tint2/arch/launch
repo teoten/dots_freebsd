@@ -1,0 +1,26 @@
+#!/bin/csh
+
+# Launch rofi with custom configuration
+rofi -show drun \
+-display-drun "Search " \
+-hide-scrollbar true \
+-bw 2 \
+-lines 22 \
+-padding 36 \
+-xoffset 20 \
+-yoffset -520 \
+-width 24 \
+-location 7\
+-columns 1 \
+-font "Scientifica 8" \
+-color-enabled true \
+-color-window "#1B2428,#1B2428,#1B2428" \
+-color-normal "#1B2428,#e0e0e0,#1B2428,#1B2428,#e45566" \
+-color-active "#1B2428,#e45566,#1B2428,#1B2428,#e45566" \
+-color-urgent "#1B2428,#e45566,#1B2428,#1B2428,#e45566"
+
+# Theming help
+# color window = background, border, separator
+# color normal = background, foreground, background-alt, highlight-background, highlight-foreground
+# color active = background, foreground, background-alt, highlight-background, highlight-foreground
+# color urgent = background, foreground, background-alt, highlight-background, highlight-foreground
