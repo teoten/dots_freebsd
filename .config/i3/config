@@ -52,17 +52,17 @@ exec --no-startup-id volumeicon &
 
 # Lock the screen
 #bindsym $mod+m  exec --no-startup-id i3lock -c 00000070 &
-bindsym $mod+m exec --no-startup-id xlock &
+bindsym --release $mod+m exec --no-startup-id slock
 
 # Screenshot
-bindsym $mod+Shift+s exec scrot -d 1 -e 'mv $f ~/Pictures/'
+bindsym $mod+Shift+s exec --no-startup-id scrot -d 1 -e 'mv $f ~/Pictures/'
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xterm
-bindsym $mod+Shift+Return exec alacritty
+bindsym $mod+Return exec alacritty
+bindsym $mod+Shift+Return exec xterm
 
 # kill focused window
 bindsym $mod+Shift+q kill
